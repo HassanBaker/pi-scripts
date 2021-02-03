@@ -1,7 +1,7 @@
 #!/bin/bash
 
-$USERNAME=$1
-$PASSWORD=$2
+USERNAME=$1
+PASSWORD=$2
 
 sudo useradd -m $USERNAME
 (echo $PASSWORD; echo $PASSWORD) | sudo passwd $USERNAME
